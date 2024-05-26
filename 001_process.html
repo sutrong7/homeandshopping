@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>홈&amp;쇼핑 입점안내</title>
+    <!--[if lt IE 9]>
+	<script src="/resource/js/lib/html5.js" type="text/javascript"></script>
+	<![endif]-->
+    <link rel="stylesheet" type="text/css" href="../resource/css/style.css">
+    <script src="../resource/js/lib/jquery-1.10.2.min.js"></script>
+    <script src="../resource/js/uiscript.js"></script>
+    <script src="../resource/js/common.js"></script>
+</head>
+
+<body>
+
+    <div class="page">
+        <!-- /.page-header -->
+        <header class="page-header">
+           <!--@@@2019-10-28 로그아웃 영역 추가 -->
+            <div class="page-nav-logout">
+                <div class="grid-container clearfix">
+                    <nav>
+                        <span><em>홈&쇼핑</em> 님</span>
+                        <a href="#">로그아웃</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="page-nav-top">
+                <div class="grid-container">
+                    <div class="logo"><a href="index.html"><img src="../resource/img/logo.png" alt="logo"></a></div>
+                    <div class="grid-container">
+                       <nav>
+                            <ul class="main clear">
+                                <li><a href="#">HOME</a></li>
+                                <li class="on"><a href="001_process.html">입점 절차</a></li>
+                                <li><a href="002_companyInfo.html">입점 신청</a>
+                                    <ul class="sub">
+                                        <li><a href="002_login.html">로그인</a></li>
+                                        <li><a href="002_join.html">회원가입</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="003_suggestion.html">입점 상품 제안</a></li>
+                                <li><a href="004_suggestionResult.html">입점 제안 결과조회</a></li>
+                                <li><a href="005_partnerRegistration.html">협력사 등록/조회</a>
+                                    <ul class="sub">
+                                        <li><a href="005_partnerRegistration.html">협력사 등록</a></li>
+                                        <li><a href="005_partnerResult.html">협력사 등록 결과 조회</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">커뮤니티</a>
+                                    <ul class="sub">
+                                        <li><a href="006_community_notice.html">공지사항</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">홈&amp;쇼핑 신문고</a></li>
+                                    </ul>
+                                </li>                               
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- //.page-nav-top -->
+
+        </header>
+        <!-- /.page-header -->
+
+
+        <div class="grid-container con-wrap">
+            <!-- left side -->
+            <div class="left-area">
+                <nav class="lnb">
+                    <h1>입점 절차</h1>
+                </nav>
+                <div class="btn_group">
+                    <a href="#"><img src="../resource/img/left_btn01.png" alt="신규입점 문의하기"></a>
+                    <a href="#"><img src="../resource/img/left_btn02.png" alt="홈&쇼핑 신문고"></a>
+                </div>
+            </div>
+            <!-- left side end -->
+            <!-- light side -->
+            <section class="container">
+                <h1>입점 절차</h1>
+                <div class="here">
+                    <ul>
+                        <li><a href="#"><span class="iconHome"></span>HOME</a><span>&gt;</span></li>
+                        <li class="now">입점 절차</li>
+                    </ul>
+                </div>
+
+                <ul class="process-tab cl tab">
+                    <li class="ico1 on"><a href="#"><span>STEP 1</span>입점 제안</a></li>
+                    <li class="ico2"><a href="#"><span>STEP 2</span>입점 심사</a></li>
+                    <li class="ico3"><a href="#"><span>STEP 3</span>협력사 등록</a></li>
+                    <li class="ico4"><a href="#"><span>STEP 4</span>전자 계약 체결</a></li>
+                    <li class="ico5"><a href="#"><span>STEP 5</span>홈&amp;파트너스 교육/<br>품질검사</a></li>
+                </ul>
+
+                <div class="tab_con">
+
+                    <div class="con-box process on">
+                        <div class="header">
+                            <h1><span>STEP 1</span> 입점제안</h1>
+                        </div>
+                        <div class="inner">
+                            <ul class="dot mb30">
+                                <li>상단 <span>입점 제안</span> 메뉴를 선택합니다. <a href="#" class="shortcuts whiteBlue">바로가기</a></li>
+                                <li>담당자/ 기업/ 제안 상품 정보를 입력한 후 저장하시면 입점 제안이 완료됩니다.</li>
+                                <li>
+                                    <p>제안 결과는 제안일 기준 5영업일 이내 등록한 담당자 연락처로 SMS과 이메일로 알려드리며, 상단 <span>입점 제안 결과조회</span> 메뉴에서도<br> 확인하실 수 있습니다.<a href="#" class="shortcuts whiteBlue">바로가기</a></p>
+                                </li>
+                            </ul>
+                            <h3 class="title">사전 준비 사항</h3>
+                            <ul>
+                                <li>1. 회사/상품정보</li>
+                                <li>2. 상품소개서</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="con-box process">
+                        <div class="header">
+                            <h1><span>STEP 2</span> 입점 심사</h1>
+                        </div>
+                        <div class="inner">
+                            <h3 class="title">MD 심사</h3>
+                            <ul class="dot mb30">
+                                <li>입점 제안 후 제안일 기준 5일 이내(영업일 기준) MD 배정 및 심사를 진행합니다.</li>
+                                <li>
+                                    <p>MD심사결과는 등록된 SMS와 Email을 통해 안내드립니다.<br>상단의 <span>입점 제안 결과 조회</span> 메뉴를 통해서도 결과 확인이 가능 합니다.<a href="#" class="shortcuts whiteBlue">바로가기</a></p>
+                                </li>
+                                <li>입점 제안 통과한 상품은 MD상담 후 상품선정회의를 진행합니다.</li>
+                            </ul>
+                            <h3 class="title">상품선정위원회 심사</h3>
+                            <ul class="dot">
+                                <li>당사에서는 공정한 상품 선정을 위하여 상품선정위원회를 운영하고 있습니다. (담당MD와 사전 협의 후 진행)</li>
+                                <li>절차 : 내부평가&gt;온라인평가&gt;상품선정위원회(매주 목요일) 진행</li>
+                                <li>결과는 상품선정위원회 종료 후 5영업일 이내 담당MD를 통하여 확인하실 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="con-box process">
+                        <div class="header">
+                            <h1><span>STEP 3</span> 협력사 등록</h1>
+                        </div>
+                        <div class="inner">
+                            <h3 class="title">협력사 등록</h3>
+                            <ul class="dot mb30">
+                                <li>상단 <span>협력사 등록</span> 메뉴를 선택합니다.<a href="#" class="shortcuts whiteBlue">바로가기</a></li>
+                                <li>협력사 등록 정보 검토 후, 임점 승인이 완료 되면 전자계약 체결을 진행합니다.</li>
+                            </ul>
+                            <h3 class="title">사전 준비 사항</h3>
+                            <ul>
+                                <li>1. 공인인증서
+                                    <ul class="info">
+                                        <li>- 공인인증서(범용) *은행용/세금계산서용(무료) 사용 불가 (단, 기존에 사용중인 범용공인인증서 있다면 가능)</li>
+                                        <li>- 신청/안내 문의 : T 02-856-5880</li>
+                                    </ul>
+                                </li>
+                                <li>2. 신용평가서
+                                    <ul class="info">
+                                        <li>- 가입처 : ㈜나이스디앤비</li>
+                                        <li>* 나이스디앤비 외 신용평가사의 평가서 사용 가능</li>
+                                        <li>- 연락처 : T 02-2122-2550</li>
+                                    </ul>
+                                </li>
+                                <li>3. 구비서류
+                                    <ul class="info">
+                                        <li>- 통장 사본, 사업자등록증, 인감증명서</li>
+                                        <li><span>※ 이행(지급)보증보험은 전자 계약 체결 후 가입 (의무)</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="con-box process">
+                        <div class="header">
+                            <h1><span>STEP 4</span> 전자계약체결</h1>
+                        </div>
+                        <div class="inner">
+                            <h3 class="title">전자 계약 체결</h3>
+                            <ul class="dot mb30">
+                                <li>입점 승인이 완료 되면, 전자계약을 체결하기 위해 표준거래계약서 발송이 됩니다.</li>
+                                <li>전자계약서명 <span><a href="http://ecs.hnsmall.com">http://ecs.hnsmall.com</a></span></li>
+                                <li>표준거래계약 체결 후, 보증보험(SGI 서울보증보험) 가입 바랍니다.</li>
+                            </ul>
+                            <h3 class="title">보증보험</h3>
+                            <ul class="dot">
+                                <li class="mb10">
+                                    <p>당사와 거래하시는 협력사에 대하여 이행지급보증보험 가입을 의무화 하고 있습니다.<br>(미가입시 SCM 기능 중 일부 사용이 제한될 수 있습니다.)</p>
+                                </li>
+                                <li>SGI 서울보증보험 (<span><a href="https://www.sgic.co.kr">https://www.sgic.co.kr</a></span> / 전 지점 가입 가능)
+                                    <ul class="info">
+                                        <li>- 세종로지점 : 손창용 팀장 (02-730-0773~4 / <a href="mailto:cyson@daum.net" class="mail">cyson@daum.net</a>)</li>
+                                        <li>- 종각지점 : 유지선 실장 (T.02-737-0021/0041 / <a href="mailto:sgic157@daum.net" class="mail">sgic157@daum.net</a>)</li>
+                                    </ul>
+                                </li>
+                                <li>홈앤쇼핑 담당자 : 02-6364-1027</li>
+                                <li>
+                                    <div>
+                                        <span>가입/증액 기준</span>
+                                        <a href="#" class="shortcuts whiteBlue">바로가기</a>
+                                    </div>
+                                    <div>
+                                        <span>보증보험 시뮬레이션</span>
+                                        <a href="#" class="shortcuts whiteBlue">바로가기</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="con-box process">
+                        <div class="header">
+                            <h1><span>STEP 5</span> SCM 교육/품질검사</h1>
+                        </div>
+                        <div class="inner">
+                            <h3 class="title">SCM 교육</h3>
+                            <ul class="dot mb30">
+                                <li>홈&amp;쇼핑의 SCM시스템을 편리하게 사용할 수 있도록 월 2회 교육 진행. <span class="red">(신규협력사는 시스템교육 필수로 이수)</span></li>
+                                <li>교육내용 : SCM 프로세스 및 사용법 교육, 정산관리, 상품이미지, 기술서 등록</li>
+                                <li>교육시간 : 총 3시간 / 시간대별 교육 참석가능</li>
+                                <li>교육장소 : 홈&amp;쇼핑 사옥 내 (홈&amp;파트너스 시스템 교육신청란에 일정 및 장소 안내 예정)</li>
+                            </ul>
+                            <h3 class="title">품질검사</h3>
+                            <ul class="dot">
+                                <li class="mb20">품질검사 프로세스<img src="../resource/img/quality.gif" alt="quality"></li>
+                                <li class="mb10">카테고리별 제출서류 안내 (항목 클릭시, 다운로드 가능)
+                                    
+                                    <!--@@@2019-10-28 다운로드 아이콘 추가 -->
+                                    <table class="fileDown">
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="file/H&amp;S_QA_furniture.ppt" target="_blank">가구 QA 진행절차</a></td>
+                                                <td><a href="file/H&amp;S_QA_leports.ppt" target="_blank">가전/레포츠 QA 진행절차</a></td>
+                                                <td><a href="file/H&amp;S_QA_jewelry.ppt" target="_blank">귀금속 QA 진행절차</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="file/H&amp;S_QA_daily.ppt" target="_blank">생활용품 QA 진행절차</a></td>
+                                                <td><a href="file/H&amp;S_QA_innerwear.ppt" target="_blank">속옷 QA 진행절차</a></td>
+                                                <td><a href="file/H&amp;S_QA_foods.ppt" target="_blank">식품 QA 진행절차</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="file/H&amp;S_QA_child.ppt" target="_blank">유아동 QA 진행절차</a></td>
+                                                <td><a href="file/H&amp;S_QA_clother.pptx" target="_blank">의류 QA 진행절차</a></td>
+                                                <td><a href="file/H&amp;S_QA_beauty.ppt" target="_blank">이미용 QA 진행절차</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="file/H&amp;S_QA_goods.ppt" target="_blank">잡화 QA 진행절차</a></td>
+                                                <td><a href="file/H&amp;S_QA_kitechen.ppt" target="_blank">주방용품 QA 진행절차</a></td>
+                                                <td><a href="file/H&amp;S_QA_bed.ppt" target="_blank">침구 QA 진행절차</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- light side end -->
+        </div>
+        <!-- //.grid-container -->
+    </div>
+    <!-- //.page -->
+
+    <div class="footer">
+        <div class="inner">
+            <div class="familySite">
+                <button type="button">패밀리 사이트<span></span></button>
+                <ul>
+                    <li><a href="#" target="_blank">전자계약시스템</a></li>
+                    <li><a href="#" target="_blank">홈&amp;파트너스</a></li>
+                    <li><a href="#" target="_blank">홈&amp;캐피탈</a></li>
+                </ul>
+            </div>
+            <h1 class="footer-logo"><a href="#"><img src="../resource/img/foot_logo.png" alt="푸터로고"></a></h1>
+            <div class="text_box">
+                <p class="text01">
+                    <span><a href="#">개인정보처리방침</a></span>
+                    <span><a href="#">회사소개</a></span>
+                </p>
+                <p class="text02">
+                    입점 업무안내 : ☏ 02)6343-1363 (업무시간 : 평일 09:00 ~ 18:00, 점심 12:00 ~ 13:00)<br> 서울특별시 강서구 공항대로 150 홈앤쇼핑
+                </p>
+                <address>
+				Copylight ⓒ 2018 by SK stoa Co., Ltd. All Rights Reserved.
+			    </address>
+            </div>
+        </div>
+
+        <!-- //.page-footer -->
+
+
+
+        <div>
+            <!-- 카테고리 안내 -->
+
+            <!-- TV 방송 카테고리 -->
+            <div class="modal c-tv">
+                <div class="modal-backdrop effect-fade effect-in"></div>
+                <div class="modal-dialog w-800 effect-toggle effect-in">
+                    <div class="modal-content effect-fade effect-in">
+                        <div class="modal-header">
+                            <button class="modal_close modal-close" type="button"></button>
+                            <h2 class="modal-title">보증보험 시뮬레이션</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="pop_con">
+
+                                <h2>최초 입점 시 가입기준</h2>
+                                <div class="step">
+                                    <div class="step_tit"><span>STEP 1</span>카테고리 선택</div>
+                                    <div class="search-box">
+                                        <div class="search-box-wrap">
+                                            <div class="box">
+                                                <span class="head">소싱매체</span>
+                                                <select class="ui-forms-select" style="width:160px;"><option>선택</option><option>TV</option><option>모바일</option></select>
+                                            </div>
+                                            <div class="box">
+                                                <span class="head">대분류</span>
+                                                <select class="ui-forms-select" style="width:160px;"><option>선택</option><option>일반 식품</option><option>입점 불가</option><option>입점 결과 대기중</option></select>
+                                            </div>
+                                            <div class="box">
+                                                <span class="head">중분류</span>
+                                                <select class="ui-forms-select" style="width:160px;"><option>선택</option><option>입점 가능</option><option>입점 불가</option><option>입점 결과 대기중</option></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn black search">확인하기</button>
+                                </div>
+                                
+                            
+
+
+                            <div class="step">
+                                <div class="step_tit"><span>STEP 2</span>보증보험 정보 확인</div>
+                                <div class="search-box">
+                                    <div class="search-box-wrap">
+                                        <div class="box">
+                                            <span class="head">상품군</span>
+                                            <input type="text" class="ui-forms-text input_point" style="width:160px;" value="식품">
+                                        </div>
+                                        <div class="box">
+                                            <span class="head">가입금액</span>
+                                            <input type="text" class="ui-forms-text input_point" style="width:160px;" value="3천만원">
+                                        </div>
+                                        <div class="box">
+                                            <span class="head">가입기간</span>
+                                            <input type="text" class="ui-forms-text input_point" style="width:160px;" value="1년">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="caution">※ 보증보험 기준과 상이하게 가입할 경우, 입점이 제한될 수 있으니 담당 MD 사전 협의 바랍니다. </span>
+                            
+                            <table class="table_con t-style2 border mb10">
+                                <colgroup>
+                                    <col style="width:12%;">
+                                    <col style="width:25%">
+                                    <col style="">
+                                    <col style="width:10%;">
+                                    <col style="width:10%;">
+                                    <col style="width:10%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="head">카테고리</td>
+                                        <td class="head">구분</td>
+                                        <td class="head">취급상품</td>
+                                        <td class="head">상품군</td>
+                                        <td class="head">가입금액</td>
+                                        <td class="head">가입기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td>일반식품</td>
+                                        <td>가공식품</td>
+                                        <td>김치, 즉석조리식품</td>
+                                        <td>식품</td>
+                                        <td>3천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TV 방송 카테고리 end -->
+
+        <!-- 가입/증액 기준 팝업 -->
+        <div class="modal long">
+            <div class="modal-backdrop effect-fade effect-in"></div>
+            <div class="modal-dialog w-800 effect-toggle">
+                <div class="modal-content effect-fade">
+                    <div class="modal-header">
+                        <button class="modal_close modal-close" type="button"></button>
+                        <h2 class="modal-title">보증보험 가입/증액 기준</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="pop_con">
+                            <div class="mb30">
+                                <h3 class="title">가입기준</h3>
+                                <ul>
+                                    <li>
+                                        <table class="table_con t-style2 border">
+                                            <colgroup>
+                                                <col style="width:12%;">
+                                                <col style="width:25%">
+                                                <col style="">
+                                                <col style="width:10%;">
+                                                <col style="width:10%;">
+                                                <col style="width:10%;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="head">카테고리</td>
+                                                    <td class="head">구분</td>
+                                                    <td class="head">취급상품</td>
+                                                    <td class="head">상품군</td>
+                                                    <td class="head">가입금액</td>
+                                                    <td class="head">가입기간</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>일반식품</td>
+                                                    <td>가공식품</td>
+                                                    <td>김치, 즉석조리식품</td>
+                                                    <td>식품</td>
+                                                    <td>1천만원</td>
+                                                    <td>2년</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>※A/S 상품
+                                        <ul class="info">
+                                            <li>
+                                                <p>- 방송 : 생활/소형가전, 주방가전, 스포츠/레저/자동차용품(의류/잡화제외), 주방용품(조리기구), 이미용기기,<br>생활/잡화 일부상품, 건강 일부상품</p>
+                                            </li>
+                                            <li>- 모바일 : 이미용, 식품, 렌탈/무형, 여행</li>
+                                        </ul>
+                                    </li>
+                                    <li>※복합 거래(방송/모바일, 일반/RISK상품 동시판매 등) 시, 가입금액이 더 높은 쪽으로 가입하시기 바랍니다.</li>
+                                    <li>※A/S상품 대상 / 가입대상 판정, 기타 문의사항 등은 사전 상담 바랍니다.</li>
+                                </ul>
+                            </div>
+                            <div class="mb30">
+                                <h3 class="title mb10">증액기준</h3>
+                                <ul>
+                                    <li class="mb15">
+                                        <p>※ 판매실적에 따라 보증보험 금액이 증액될 수 있음<br>(증액대상 협력사는 분기별 선별 / 직전 1년간의 매출액 기준)</p>
+                                    </li>
+                                    <li>
+                                        <table class="table_con t-style2 border">
+                                            <tr>
+                                                <td class="head">최근 12개월 매출</td>
+                                                <td class="head">일반</td>
+                                                <td class="head">식품</td>
+                                                <td class="head">A/S상품</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="head">10억 ~ 30억 미만</td>
+                                                <td>2천만원</td>
+                                                <td>1.0억원</td>
+                                                <td>6천만원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="head">30억 ~ 50억 미만</td>
+                                                <td>3천만원</td>
+                                                <td>1.5억원</td>
+                                                <td>9천만원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="head">50억 ~ 100억 미만</td>
+                                                <td>4천만원</td>
+                                                <td>2.0억원</td>
+                                                <td>1.2억원</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="head">30억 ~ 50억 미만</td>
+                                                <td>5천만원</td>
+                                                <td>2.5억원</td>
+                                                <td>1.5억원</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>※ 증액[연장] 시 일반/ A/S상품의 기간은 2년, 식품은 1년</li>
+                                    <li>※ 홈앤쇼핑 담당자 : 영업기획팀 김현아 과장(02-6364-1027)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 상품별 기준 -->
+                        <div class="categoryTab">
+                            <h3 class="title">상품별 기준</h3>
+                            <ul class="tabs cl">
+                                <li class="on" data-tab="tab-1">TV</li>
+                                <li data-tab="tab-2">모바일</li>
+                            </ul>
+
+                            <!-- TV 기준-->
+                            <table id="tab-1" class="table_con t-style2">
+                                <colgroup>
+                                    <col style="width:12%;">
+                                    <col style="width:25%">
+                                    <col style="">
+                                    <col style="width:10%;">
+                                    <col style="width:10%;">
+                                    <col style="width:10%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="head">카테고리</td>
+                                        <td class="head">구분</td>
+                                        <td class="head">취급상품</td>
+                                        <td class="head">상품군</td>
+                                        <td class="head">가입금액</td>
+                                        <td class="head">가입기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">일반식품</td>
+                                        <td>가공식품</td>
+                                        <td>김치, 즉석조리식품</td>
+                                        <td>식품</td>
+                                        <td>3천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>신선식품</td>
+                                        <td>농/축/수산물</td>
+                                        <td>식품</td>
+                                        <td>3천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>영유아식품</td>
+                                        <td>영유아용 식품</td>
+                                        <td>식품</td>
+                                        <td>3천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>건강식품</td>
+                                        <td>건강/다이어트식품</td>
+                                        <td>홍삼, 비타민, 생식/선식, 다이어트 등 건강식품</td>
+                                        <td>식품</td>
+                                        <td>3천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="6">이미용</td>
+                                        <td>기초</td>
+                                        <td>기초,기능성,남성화장품,팩&amp;마스크</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>향수</td>
+                                        <td>바디,향수</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>베이비스킨케어</td>
+                                        <td>베이비스킨케어</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>색조</td>
+                                        <td>메이크업,네일케어</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>클렌징</td>
+                                        <td>클렌징</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>헤어케어/헤어기기/미용기기</td>
+                                        <td>헤어케어,헤어기기,이미용기기 등</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5">속옷</td>
+                                        <td>남성속옷</td>
+                                        <td>남성 속옷</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>여성속옷</td>
+                                        <td>브라, 팬티, 보정속옷, 잠옷 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>아동속옷</td>
+                                        <td>아동 속옷</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>이지웨어</td>
+                                        <td>파자마, 실내복, 홈웨어 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>레그웨어</td>
+                                        <td>양말, 스타킹 등 레그웨어</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>침구</td>
+                                        <td>침구/커튼/카페트</td>
+                                        <td>침구, 카페트, 러그, 커튼, 블라인드, 기능성 침구 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="7">패션</td>
+                                        <td>골프의류</td>
+                                        <td>골프의류</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>아웃도어</td>
+                                        <td>아웃도어 의류</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>남성 의류</td>
+                                        <td>남성 의류</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>여성의류</td>
+                                        <td>원피스, 블라우스, 셔츠, 바지, 치마, 코트 등 여성 트렌드 의류</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>캐주얼/유니섹스의류</td>
+                                        <td>남녀 공용 의류</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>유아동잡화</td>
+                                        <td>신생아/유/아동 의류/내복/신발/가방</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>스포츠</td>
+                                        <td>스포츠 의류</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">보석/잡화</td>
+                                        <td>잡화</td>
+                                        <td>엑세서리, 구두, 신발 가방 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>귀금속, 다이아</td>
+                                        <td>목걸이, 팔찌, 반지 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="15">가전</td>
+                                        <td>TV</td>
+                                        <td>TV, 홈시어터 등</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>계절가전</td>
+                                        <td>에어컨, 제습기, 가습기, 선풍기, 온열매트, 히터, 온풍기 등</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>냉장고</td>
+                                        <td>냉장고, 김치냉장고 등</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>생활가전</td>
+                                        <td>청소기 등 생활가전</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>세탁기</td>
+                                        <td>드럼세탁기, 통돌이세탁기 등</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주방가전</td>
+                                        <td>가스/전자레인지, 전기밥솥, 전기그릴, 약탕기, 원액기 등</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타 일반가전</td>
+                                        <td>기타 일반가전</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>데스크탑</td>
+                                        <td>데스크탑 PC</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>노트북/태블릿</td>
+                                        <td>노트북, 태블릿</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>컴퓨터 주변기기</td>
+                                        <td>모니터, 복합기, 프린터 및 PC 주변기기</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>휴대폰/통신기기</td>
+                                        <td>스마트폰, 피처폰</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>핸드폰 주변기기</td>
+                                        <td>보조배터리 등 핸드폰 주변기기</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>디지털기기</td>
+                                        <td>디지털기기(카메라, 이어폰, 스피커 등)</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>디지털 주변기기</td>
+                                        <td>디지털 주변기기</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타가전</td>
+                                        <td>기타 가전</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">주방</td>
+                                        <td>조리용품</td>
+                                        <td>냄비, 압력솥, 후라이팬</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주방용기</td>
+                                        <td>수납용기, 보관/밀폐용기, 식기/홈세트 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5">생활</td>
+                                        <td>가구</td>
+                                        <td>소파, 거실/침실/학생/주방/ 수납/인테리어 가구 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>건강용품, 꽃</td>
+                                        <td>생활매트, 안마의자, 안마기, 혈압/혈당계</td>
+                                        <td>A/S상품</td>
+                                        <td>3천만원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>생활/수납/시즌/욕실/청소/ 제수 용품</td>
+                                        <td>수납/정리/청소/세제/욕실/위생/애완용품, 생리대 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>세탁/방향/제습 세제, 제지, 위생용품</td>
+                                        <td>세텍세제, 주방세제, 위생용품 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홈데코/인테리어소품</td>
+                                        <td>홈데코, 인테리어 소품</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">레포츠군</td>
+                                        <td>골프클럽/용품</td>
+                                        <td>골프클럽/용품</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>자동차용품</td>
+                                        <td>차량용 시트, 튜닝/엔진 용품 등 자동차 관련 상품</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>캠핑용품</td>
+                                        <td>텐트, 그늘막, 캠핑용품</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>헬스/스포츠용품</td>
+                                        <td>헬스/요가, 자전거, 인라인, 수영, 구기</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="7">서비스군<br>(렌탈/여행/ e쿠폰)</td>
+                                        <td>도서/교재/음반/DVD</td>
+                                        <td>도서/교재/DVD/음반</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>도서/음반/DVD</td>
+                                        <td>음반/DVD</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>렌탈</td>
+                                        <td>렌탈형태로 판매하는 정수기, 이온수기, TV, 안마의자, 공기청정기, 가전 등</td>
+                                        <td>렌탈/무형</td>
+                                        <td>1억원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>상품권/e쿠폰</td>
+                                        <td>모바일/백화점/도서/외식 상품권, 할인식사권, e쿠폰 등</td>
+                                        <td>일반</td>
+                                        <td>1천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>서비스 (숙박/레저 이용권)</td>
+                                        <td>서비스 (외식/생활/레저/입장권/호텔/ 리조트/숙박)</td>
+                                        <td>렌탈/무형</td>
+                                        <td>1억원</td>
+                                        <td>3년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>여행 (국내/해외여행)</td>
+                                        <td>여행 (국내/해외여행)</td>
+                                        <td>여행</td>
+                                        <td>1억원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>분양권</td>
+                                        <td>오피스텔 분양권 등</td>
+                                        <td>렌탈/무형</td>
+                                        <td>1억원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- TV 기준 end -->
+
+                            <!-- 모바일 기준 -->
+                            <table id="tab-2" class="table_con t-style2">
+                                <colgroup>
+                                    <col style="width:12%;">
+                                    <col style="width:25%">
+                                    <col style="">
+                                    <col style="width:10%;">
+                                    <col style="width:10%;">
+                                    <col style="width:10%;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td class="head">카테고리</td>
+                                        <td class="head">구분</td>
+                                        <td class="head">취급상품</td>
+                                        <td class="head">상품군</td>
+                                        <td class="head">가입금액</td>
+                                        <td class="head">가입기간</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">일반식품</td>
+                                        <td>가공식품</td>
+                                        <td>김치, 즉석조리식품</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>영유아식품</td>
+                                        <td>영유아용 식품</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>건강식품</td>
+                                        <td>건강/다이어트식품</td>
+                                        <td>홍삼, 비타민, 생식/선식, 다이어트 등 건강식품</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="6">이미용</td>
+                                        <td>기초</td>
+                                        <td>기초,기능성,남성화장품,팩&amp;마스크</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>향수</td>
+                                        <td>바디,향수</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>베이비스킨케어</td>
+                                        <td>베이비스킨케어</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>색조</td>
+                                        <td>메이크업,네일케어</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>클렌징</td>
+                                        <td>클렌징</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>헤어케어/헤어기기/미용기기</td>
+                                        <td>헤어케어,헤어기기,이미용기기 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="5">속옷</td>
+                                        <td>남성속옷</td>
+                                        <td>남성 속옷</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>여성속옷</td>
+                                        <td>브라, 팬티, 보정속옷, 잠옷 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>아동속옷</td>
+                                        <td>아동 속옷</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>이지웨어</td>
+                                        <td>파자마, 실내복, 홈웨어 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>레그웨어</td>
+                                        <td>양말, 스타킹 등 레그웨어</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>침구</td>
+                                        <td>침구/커튼/카페트</td>
+                                        <td>침구, 카페트, 러그, 커튼, 블라인드, 기능성 침구 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="6">패션</td>
+                                        <td>골프의류</td>
+                                        <td>골프의류</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>아웃도어</td>
+                                        <td>아웃도어 의류</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>남성 의류</td>
+                                        <td>남성 의류</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>여성의류</td>
+                                        <td>원피스, 블라우스, 셔츠, 바지, 치마, 코트 등 여성 트렌드 의류</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>캐주얼/유니섹스의류</td>
+                                        <td>남녀 공용 의류</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>스포츠</td>
+                                        <td>스포츠 의류</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>잡화</td>
+                                        <td>잡화</td>
+                                        <td>엑세서리, 구두, 신발 가방 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>보석</td>
+                                        <td>귀금속, 다이아</td>
+                                        <td>목걸이, 팔찌, 반지 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="15">가전</td>
+                                        <td>TV</td>
+                                        <td>TV, 홈시어터 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>계절가전</td>
+                                        <td>에어컨, 제습기, 가습기, 선풍기, 온열매트, 히터, 온풍기 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>냉장고</td>
+                                        <td>냉장고, 김치냉장고 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>생활가전</td>
+                                        <td>청소기 등 생활가전</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>세탁기</td>
+                                        <td>드럼세탁기, 통돌이세탁기 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주방가전</td>
+                                        <td>가스/전자레인지, 전기밥솥, 전기그릴, 약탕기, 원액기 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타 일반가전</td>
+                                        <td>기타 일반가전</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>데스크탑</td>
+                                        <td>데스크탑 PC</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>노트북/태블릿</td>
+                                        <td>노트북, 태블릿</td>
+                                        <td>식품</td>
+                                        <td>3천만원</td>
+                                        <td>1년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>컴퓨터 주변기기</td>
+                                        <td>모니터, 복합기, 프린터 및 PC 주변기기</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>휴대폰/통신기기</td>
+                                        <td>스마트폰, 피처폰</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>핸드폰 주변기기</td>
+                                        <td>보조배터리 등 핸드폰 주변기기</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>디지털기기</td>
+                                        <td>디지털기기(카메라, 이어폰, 스피커 등)</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>디지털 주변기기</td>
+                                        <td>디지털 주변기기</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>기타가전</td>
+                                        <td>기타 가전</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">주방</td>
+                                        <td>조리용품</td>
+                                        <td>냄비, 압력솥, 후라이팬</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>주방용기</td>
+                                        <td>수납용기, 보관/밀폐용기, 식기/홈세트 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">생활</td>
+                                        <td>건강용품, 꽃</td>
+                                        <td>생활매트, 안마의자, 안마기, 혈압/혈당계</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>생활/수납/시즌/욕실/청소/ 제수 용품</td>
+                                        <td>수납/정리/청소/세제/욕실/위생/애완용품, 생리대 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>세탁/방향/제습 세제, 제지, 위생용품</td>
+                                        <td>세텍세제, 주방세제, 위생용품 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홈데코/인테리어소품</td>
+                                        <td>홈데코, 인테리어 소품</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>가구</td>
+                                        <td>가구</td>
+                                        <td>소파, 거실/침실/학생/주방/ 수납/인테리어 가구 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>애완</td>
+                                        <td>애완용품</td>
+                                        <td>애완 동물 사료, 용품 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="4">레포츠군</td>
+                                        <td>골프클럽/용품</td>
+                                        <td>골프클럽/용품</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>자동차용품</td>
+                                        <td>차량용 시트, 튜닝/엔진 용품 등 자동차 관련 상품</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>캠핑용품</td>
+                                        <td>텐트, 그늘막, 캠핑용품</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>헬스/스포츠용품</td>
+                                        <td>헬스/요가, 자전거, 인라인, 수영, 구기</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>유아동</td>
+                                        <td>유아/어린이 용품</td>
+                                        <td>유아동/ 유아 도서/서적/DVD 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="7">서비스군<br>(렌탈/여행/ e쿠폰)</td>
+                                        <td>도서/교재/음반/DVD</td>
+                                        <td>도서/교재/DVD/음반</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>도서/음반/DVD</td>
+                                        <td>(유아/어린이 도서를 제외한) 도서, 교재, 음반/DVD</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>렌탈</td>
+                                        <td>렌탈형태로 판매하는 정수기, 이온수기, TV, 안마의자, 공기청정기, 가전 등</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>상품권/e쿠폰</td>
+                                        <td>모바일/백화점/도서/외식 상품권, 할인식사권, e쿠폰 등</td>
+                                        <td>식품</td>
+                                        <td>5백만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>서비스 (숙박/레저 이용권)</td>
+                                        <td>서비스 (외식/생활/레저/입장권/호텔/ 리조트/숙박)</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>여행 (해외/국내여행)</td>
+                                        <td>여행 (해외/국내여행)</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>분양권</td>
+                                        <td>오피스텔 분양권 등</td>
+                                        <td>식품</td>
+                                        <td>1천만원</td>
+                                        <td>2년</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 모바일 기준 end -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 가입/증액 기준 팝업 end-->
+
+    </div>
+
+
+    <script>
+        $(function() {
+            $('.modal').modal('open');
+        });
+
+    </script>
+
+
+    </div>
+
+</body>
+
+</html>
