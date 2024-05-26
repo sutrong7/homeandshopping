@@ -257,7 +257,7 @@ ui = {
 				dateFormat: 'yy-mm-dd',
 				showMonthAfterYear: true,
 				showOn: "button",
-				buttonImage: "/resource/img/datepicker.gif",
+				buttonImage: "resource/img/datepicker.gif",
 				buttonImageOnly: true,
 			};
 			$.datepicker.setDefaults($.datepicker.regional['en']);
